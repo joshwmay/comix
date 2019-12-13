@@ -5,6 +5,7 @@ body {
 body a {
     display: flex;
     justify-content: center;
+    padding: 5%;
 }
 
 body h2 {
@@ -16,4 +17,12 @@ body h2 {
     font-size: 50px;
     word-wrap: break-word;
     align-items: center;
+    padding-right: 5%;
+    padding-left: 5%;
+}
+
+#profile_pic {
+    padding-top: 5%;
+    height: 20%;
+
 }
