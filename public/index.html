@@ -2,31 +2,85 @@
 <html lang = "en-US">
 <head>
   <meta charset = "utf-8">
-  <title> Jeunbug Comix </title>
+  <title> Jeunebug Comix </title>
   <meta name = "Brandon Jeune, Joshua May" content="width=device-width, initial-scale=1">
   <link rel  = "stylesheet" href ="css/styles.css">
 </head>
 <body>
+  <header>
+    <h1>Jeunebug Comix</h1>
     <a href="https://www.instagram.com/jeunebugcomix/"><img src="img/avatar.PNG"></button></a>
-    <h2>Here's a placemaker where a writer makes a living.</h2>
+    <h2>When life hands you low-hanging fruit, doodle it</h2>
+  </header>
 
-    <a href ="https://www.instagram.com/p/Bt3huOyBAfQ/"><img src="img/cupid.PNG"></button></a>
-    <h2>Here's where a developer shares their progress</h2>
+  <a href ="https://www.instagram.com/p/B4TQ1-vgPch/"><img src="img/werewolves_london.PNG"></a>
+  <button class="collapse">American Werewolves in London...</button>
+    <div class="descriptions">
+      <p>Managed to get in one more #inktober before the end of the month. Happy Halloween! #comics 
+          #drawing #inking #illustration #art #halloween #horror #werewolf</p>
+    </div>
+    
+  <a href ="https://www.instagram.com/p/B3f6cL8Ar5A/"><img src="img/inktober19.PNG"></a>
+  <button class="collapse">Inktober Drawing...</button>
+  <div class="descriptions">
+      <p>Twelve days into October and I’m only just completing my first #inktober drawing, 
+        but here’s to another attempt at setting aside time for art in between lesson planning 
+        and replaying most of the Resident Evil games late into the night #creaturedesign 
+        #illustration #art #drawing #inking #monsters</p>
+  </div>
 
-    <a href ="https://www.instagram.com/p/BsiFe3uAO2l/"><img src="img/dcdinos.PNG"></a>
-    <h2>Here's where you can build a web presence that crosses all networks favorably</h2>
+  <a id="hairline" href ="https://www.instagram.com/p/BzCSozlAXtq/"><img src="img/hairline.PNG"></a>
+  <button class="collapse">Lorax Redux...</button>
+  <div class="descriptions">
+      <p>“Unless someone invents hair plugs that don’t cost such a lot, the hairline’s not going to get 
+        better. It’s not.” Was reading The Lorax with my students last week and decided to turn my 
+        subsequent rumination into a comic. Not sure what it says about me that said rumination 
+        ignored the story’s easy connection to climate change and instead found a way to focus on my 
+        own personal aging and angst. #comics #illustration #art #humor #drseuss #thelorax</p>
+  </div>
 
-    <a id="hairline" href ="https://www.instagram.com/p/BzCSozlAXtq/"><img src="img/hairline.PNG"></a>
-    <h2>Apply Metcalfe's law by creating the same entity accross different networks</h2>
+  <a id="inst" href ="https://www.instagram.com/p/BuuaFhqB3av/"><img src="img/inst0.PNG"></a>
+  <button class="collapse">Instructional Materials...</button>
+  <div class="descriptions">
+      <p>As a teacher, much of my creative energy goes into making instructional materials, 
+        so if you ever find yourself wondering why you don’t see comics from me more often, 
+        it’s because you’re not one of my second graders. #doraemon #comics #art #illustration #manga #teaching</p>
+  </div>
 
-    <a href ="https://www.instagram.com/p/B3f6cL8Ar5A/"><img src="img/inktober19.PNG"></a>
-    <h2>Add more where it makes sense, and reveal more if you can or want to</h2>
+  
+  <a href ="https://www.instagram.com/p/Bt3huOyBAfQ/"><img src="img/cupid.PNG"></button></a>
+  <button class="collapse">Cupid...</button>
+  <div class="descriptions">
+      <p>Considered emphasizing this comic was made “by hand,” but decided that was beneath 
+        even me #happyvalentinesday #comics #art #illustration #humor</p>
+  </div>
 
-    <a id="inst" href ="https://www.instagram.com/p/BuuaFhqB3av/"><img src="img/inst0.PNG"></a>
-    <h2>Treat your content like an illuminated manuscript</h2>
+  <a href ="https://www.instagram.com/p/BsiFe3uAO2l/"><img src="img/dcdinos.PNG"></a>
+  <button class="collapse">DC Dinos</button>
+  <div class="descriptions">
+      <p>I wouldn’t say I’ve stolen anyone’s thunder with this (as I didn’t specifically 
+        mention #thor (woops)) as much as taken a harmless ride on someone’s cloaktales, 
+        but, as they always say, “cape diem” (try and seize a little of that sweet, sweet 
+        superhero trending capital). #comic #art #drawing #marvel #dc #dinosaurs</p>
+  </div>
 
-    <a href ="https://www.instagram.com/p/B4TQ1-vgPch/"><img src="img/werewolves_london.PNG"></a>
-    <h2>AwwWooOOOOOO!</h2>
+
+  
+
 </body>
-
+<script>
+  var coll = document.getElementsByClassName("collapse");
+  var i;
+  for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var content = this.nextElementSibling;
+      if (content.style.display === "block") {
+        content.style.display = "none";
+      } else {
+        content.style.display = "block";
+      }
+    });
+  }
+</script>
 </html>
