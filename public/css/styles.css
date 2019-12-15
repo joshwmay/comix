@@ -17,7 +17,7 @@ body button {
     align-self: center;
 }
 
-body p, body h1, body p, h2 {
+body p, body h1, body p, h2, li {
     background-color: rgb(226, 226, 118);
     color: rgb(75, 75, 156);
     font-style: bold;
@@ -30,10 +30,20 @@ body p, body h1, body p, h2 {
     padding-left: 5%;
 }
 
-#hairline img, #inst img{
+#inst img{
     width: 100%;
     height: 100%;
     overflow-x: scroll;
+}
+
+.scrolling-wrapper {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+.card{
+    display: inline-block;
 }
 
 .collapse {
