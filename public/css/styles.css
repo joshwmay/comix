@@ -46,6 +46,11 @@ body p, body h1, body p, h2, li {
     display: inline-block;
 }
 
+.card img {
+    width: 90%;
+    height: 90%;
+}
+
 .collapse {
     display: flex;
     justify-content: center;
