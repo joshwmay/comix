@@ -112,4 +112,5 @@ body p, body h1, body p, h2, li {
     position: relative;
     animation: move1 15s alternate infinite;
     animation-delay: 3s;
+    border: none;
 }
