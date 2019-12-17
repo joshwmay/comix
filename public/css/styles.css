@@ -49,7 +49,7 @@ body p, body h1, body p, h2, li {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #777;
+    background-color: #c97373;
     color: white;
     cursor: pointer;
     width: 100%;
@@ -62,4 +62,9 @@ body p, body h1, body p, h2, li {
   .descriptions {
     display: none;
     overflow: hidden;
+  }
+
+  body {
+      background-image: url("https://joshwmay.github.io/comix/public/img/background.PNG");
+      background-repeat: repeat;
   }
