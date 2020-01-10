@@ -13,6 +13,11 @@ body button {
     align-self: center;
 }
 
+h1 {
+    margin-left:25%;
+    margin-right:25%;
+}
+
 body p, body h1, body p, h2, li {
     background-color: rgb(226, 226, 118);
     color: rgb(75, 75, 156);
